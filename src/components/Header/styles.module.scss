@@ -1,0 +1,22 @@
+.container {
+    height: 6rem;
+    display: flex;
+    background: var(--yellow-500);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    p {
+        font-size: 12px;
+    }
+
+    input {
+        padding: 0.5rem;
+        width: 15rem;
+        border-radius: 0.75rem;
+        border: none;
+    }
+}

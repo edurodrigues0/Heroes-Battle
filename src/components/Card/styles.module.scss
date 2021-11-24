@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    align-items: center;
+}
+
+.cardContainer {
+    height: 250px;
+    width: 150px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    button {
+        background: transparent;
+        border:none !important;
+    }
+
+    img {
+        width: 150px;
+        height: 250px;
+        border-radius: 0.25rem;
+    }
+
+    p {
+        color: var(--cyan-500);
+        
+        transition: filter 0.4s;
+        &:hover {
+            filter: color(var(--cyan-400))
+        }
+    }
+}
