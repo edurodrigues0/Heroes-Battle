@@ -34,6 +34,8 @@ export function BattleModal() {
                         );
                     })}
             </div>
+            
+            <button onClick={closeModal}>Close</button>
         </Modal>
     );
 }
