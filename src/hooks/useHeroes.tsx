@@ -94,7 +94,13 @@ export function HeroesProvider({ children }: HeroesProviderProps) {
     }
 
     function newWinner() {
-        heroLeftFullPower > heroRightFullPower ? setWinner(battleHero[0]?.name) : setWinner(battleHero[1]?.name)
+        // heroLeftFullPower > heroRightFullPower ? setWinner(battleHero[0]?.name) : setWinner(battleHero[1]?.name)
+        if (heroLeftFullPower === heroRightFullPower)
+            return setWinner('Empate')
+        if (heroLeftFullPower > heroRightFullPower)
+            return setWinner(battleHero[0]?.name) 
+        if (heroLeftFullPower < heroRightFullPower)
+            return setWinner(battleHero[1]?.name)
     }
     
     return(
